@@ -9,6 +9,7 @@ jobs:
     steps:
       - run : return 1
       - run : echo "Error"
+        when: on_fail
 
 workflows:
   my_workflow:

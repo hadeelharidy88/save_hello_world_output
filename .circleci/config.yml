@@ -8,8 +8,9 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - run : exit 1
-      - run : echo "Happy Error"
-        when: on_fail
+      - run : 
+           command: echo "Happy Error"
+           when: on_fail
 
 workflows:
   my_workflow:

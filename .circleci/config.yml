@@ -15,14 +15,14 @@ jobs:
     steps:
       
       - print_pipeline_id:
-          to: <<pipeline.id>>
+          id: <<pipeline.id>>
           
           
           
  commands:
   print_pipeline_id:
     parameters:
-      to:
+      id:
          type : string
     
       
